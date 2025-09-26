@@ -31,7 +31,6 @@ public class PurchaseRepository {
             rowObject.setPrice(r.getBigDecimal("price"));
             return rowObject;
         };
-
         return jdbc.query(sql, purchaseRowMapper);
     }
 }
